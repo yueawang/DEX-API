@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>查询用户信息 · Loopring API</title>
+        <title>Query user information · Loopring API</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -85,7 +85,7 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="getUserCreate.html" />
+    <link rel="next" href="submitUpdateAccount.html" />
     
     
     <link rel="prev" href="submitTransfer.html" />
@@ -152,12 +152,12 @@
         
         
     
-        <li class="chapter " data-level="2.1" data-path="../basics/orders.html">
+        <li class="chapter " data-level="2.1" data-path="../basics/general_info.html">
             
-                <a href="../basics/orders.html">
+                <a href="../basics/general_info.html">
             
                     
-                    订单模型
+                    基本信息
             
                 </a>
             
@@ -191,7 +191,20 @@
             
         </li>
     
-        <li class="chapter " data-level="2.4" data-path="../basics/examples.html">
+        <li class="chapter " data-level="2.4" data-path="../basics/orders.html">
+            
+                <a href="../basics/orders.html">
+            
+                    
+                    订单模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../basics/examples.html">
             
                 <a href="../basics/examples.html">
             
@@ -204,7 +217,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.5" data-path="../basics/contracts.html">
+        <li class="chapter " data-level="2.6" data-path="../basics/contracts.html">
             
                 <a href="../basics/contracts.html">
             
@@ -217,7 +230,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.6" data-path="../basics/uat_token.html">
+        <li class="chapter " data-level="2.7" data-path="../basics/uat_token.html">
             
                 <a href="../basics/uat_token.html">
             
@@ -256,7 +269,7 @@
                 <a href="getTimestamp.html">
             
                     
-                    查询服务器当前时间
+                    Get relayer's current time
             
                 </a>
             
@@ -269,7 +282,7 @@
                 <a href="getApiKey.html">
             
                     
-                    查询用户ApiKey
+                    Get user ApiKey
             
                 </a>
             
@@ -282,7 +295,7 @@
                 <a href="applyApiKey.html">
             
                     
-                    更新用户ApiKey
+                    Update user's ApiKey
             
                 </a>
             
@@ -290,12 +303,12 @@
             
         </li>
     
-        <li class="chapter " data-level="3.1.4" data-path="getNextOrderId.html">
+        <li class="chapter " data-level="3.1.4" data-path="getNextStorageId.html">
             
-                <a href="getNextOrderId.html">
+                <a href="getNextStorageId.html">
             
                     
-                    获取下一个有效OrderId
+                    Get next storage ID
             
                 </a>
             
@@ -308,7 +321,7 @@
                 <a href="getOrderDetail.html">
             
                     
-                    获取订单详情
+                    Get order details
             
                 </a>
             
@@ -316,25 +329,12 @@
             
         </li>
     
-        <li class="chapter " data-level="3.1.6" data-path="submitOrder.html">
-            
-                <a href="submitOrder.html">
-            
-                    
-                    提交订单
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="3.1.7" data-path="submitOrderV3.html">
+        <li class="chapter " data-level="3.1.6" data-path="submitOrderV3.html">
             
                 <a href="submitOrderV3.html">
             
                     
-                    提交订单V3
+                    Submit an order
             
                 </a>
             
@@ -342,12 +342,12 @@
             
         </li>
     
-        <li class="chapter " data-level="3.1.8" data-path="batchSubmitOrder.html">
+        <li class="chapter " data-level="3.1.7" data-path="cancelOrder.html">
             
-                <a href="batchSubmitOrder.html">
+                <a href="cancelOrder.html">
             
                     
-                    批量提交订单
+                    Cancel order
             
                 </a>
             
@@ -355,12 +355,12 @@
             
         </li>
     
-        <li class="chapter " data-level="3.1.9" data-path="getOrders.html">
+        <li class="chapter " data-level="3.1.8" data-path="getOrders.html">
             
                 <a href="getOrders.html">
             
                     
-                    获取用户订单列表
+                    Get multiple orders
             
                 </a>
             
@@ -368,103 +368,12 @@
             
         </li>
     
-        <li class="chapter " data-level="3.1.10" data-path="cancelOrders.html">
-            
-                <a href="cancelOrders.html">
-            
-                    
-                    取消订单
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="3.1.11" data-path="batchCancelOrdersByOrderHash.html">
-            
-                <a href="batchCancelOrdersByOrderHash.html">
-            
-                    
-                    根据订单HASH批量取消订单
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="3.1.12" data-path="batchCancelOrdersByClientOrderId.html">
-            
-                <a href="batchCancelOrdersByClientOrderId.html">
-            
-                    
-                    根据订单的客户端标识的订单ID批量取消订单
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="3.1.13" data-path="sendTransaction.html">
-            
-                <a href="sendTransaction.html">
-            
-                    
-                    发送以太坊交易
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="3.1.14" data-path="getEthNonce.html">
-            
-                <a href="getEthNonce.html">
-            
-                    
-                    查询用户以太坊地址可用的nonce
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="3.1.15" data-path="getEthBalance.html">
-            
-                <a href="getEthBalance.html">
-            
-                    
-                    查询ETH余额
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="3.1.16" data-path="getRecommendedGasPrice.html">
-            
-                <a href="getRecommendedGasPrice.html">
-            
-                    
-                    获取推荐gas
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="3.1.17" data-path="getMarkets.html">
+        <li class="chapter " data-level="3.1.9" data-path="getMarkets.html">
             
                 <a href="getMarkets.html">
             
                     
-                    查询交易所支持的市场配置
+                    Get market configurations
             
                 </a>
             
@@ -472,12 +381,12 @@
             
         </li>
     
-        <li class="chapter " data-level="3.1.18" data-path="getTokens.html">
+        <li class="chapter " data-level="3.1.10" data-path="getTokens.html">
             
                 <a href="getTokens.html">
             
                     
-                    查询交易所支持的通证信息
+                    Get token configurations
             
                 </a>
             
@@ -485,12 +394,12 @@
             
         </li>
     
-        <li class="chapter " data-level="3.1.19" data-path="getExchangeInfo.html">
+        <li class="chapter " data-level="3.1.11" data-path="getExchangeInfo.html">
             
                 <a href="getExchangeInfo.html">
             
                     
-                    查询交易所的基本必要信息
+                    Get exchange configurations
             
                 </a>
             
@@ -498,12 +407,12 @@
             
         </li>
     
-        <li class="chapter " data-level="3.1.20" data-path="getDepth.html">
+        <li class="chapter " data-level="3.1.12" data-path="getDepth.html">
             
                 <a href="getDepth.html">
             
                     
-                    获取市场深度信息
+                    Get market orderbook
             
                 </a>
             
@@ -511,12 +420,12 @@
             
         </li>
     
-        <li class="chapter " data-level="3.1.21" data-path="getTicker.html">
+        <li class="chapter " data-level="3.1.13" data-path="getTicker.html">
             
                 <a href="getTicker.html">
             
                     
-                    查询交易所Ticker
+                    Get market ticker
             
                 </a>
             
@@ -524,12 +433,12 @@
             
         </li>
     
-        <li class="chapter " data-level="3.1.22" data-path="getCandlestick.html">
+        <li class="chapter " data-level="3.1.14" data-path="getCandlestick.html">
             
                 <a href="getCandlestick.html">
             
                     
-                    查询K线数据
+                    Get market candlestick
             
                 </a>
             
@@ -537,12 +446,12 @@
             
         </li>
     
-        <li class="chapter " data-level="3.1.23" data-path="getPrice.html">
+        <li class="chapter " data-level="3.1.15" data-path="getPrice.html">
             
                 <a href="getPrice.html">
             
                     
-                    查询token法币价
+                    Get token fiat prices
             
                 </a>
             
@@ -550,12 +459,12 @@
             
         </li>
     
-        <li class="chapter " data-level="3.1.24" data-path="getMarketTrade.html">
+        <li class="chapter " data-level="3.1.16" data-path="getMarketTrade.html">
             
                 <a href="getMarketTrade.html">
             
                     
-                    查询市场交易
+                    Get market recent trades
             
                 </a>
             
@@ -563,38 +472,12 @@
             
         </li>
     
-        <li class="chapter " data-level="3.1.25" data-path="getAllowance.html">
-            
-                <a href="getAllowance.html">
-            
-                    
-                    查询授权
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="3.1.26" data-path="getTokenBalance.html">
-            
-                <a href="getTokenBalance.html">
-            
-                    
-                    查询Token余额
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="3.1.27" data-path="submitTransfer.html">
+        <li class="chapter " data-level="3.1.17" data-path="submitTransfer.html">
             
                 <a href="submitTransfer.html">
             
                     
-                    提交内部转账
+                    Submit internal transfer
             
                 </a>
             
@@ -602,12 +485,12 @@
             
         </li>
     
-        <li class="chapter active" data-level="3.1.28" data-path="getAccount.html">
+        <li class="chapter active" data-level="3.1.18" data-path="getAccount.html">
             
                 <a href="getAccount.html">
             
                     
-                    查询用户信息
+                    Query user information
             
                 </a>
             
@@ -615,12 +498,25 @@
             
         </li>
     
-        <li class="chapter " data-level="3.1.29" data-path="getUserCreate.html">
+        <li class="chapter " data-level="3.1.19" data-path="submitUpdateAccount.html">
+            
+                <a href="submitUpdateAccount.html">
+            
+                    
+                    Update account EDDSA key
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.20" data-path="getUserCreate.html">
             
                 <a href="getUserCreate.html">
             
                     
-                    获取用户开户记录
+                    Get user registration transactions
             
                 </a>
             
@@ -628,12 +524,12 @@
             
         </li>
     
-        <li class="chapter " data-level="3.1.30" data-path="getUserUpdate.html">
+        <li class="chapter " data-level="3.1.21" data-path="getUserUpdate.html">
             
                 <a href="getUserUpdate.html">
             
                     
-                    获取用户更新记录
+                    Get password reset transactions
             
                 </a>
             
@@ -641,12 +537,12 @@
             
         </li>
     
-        <li class="chapter " data-level="3.1.31" data-path="getUserBalances.html">
+        <li class="chapter " data-level="3.1.22" data-path="getUserBalances.html">
             
                 <a href="getUserBalances.html">
             
                     
-                    查询用户交易所余额
+                    Get user exchange balances
             
                 </a>
             
@@ -654,12 +550,12 @@
             
         </li>
     
-        <li class="chapter " data-level="3.1.32" data-path="getUserDeposits.html">
+        <li class="chapter " data-level="3.1.23" data-path="getUserDeposits.html">
             
                 <a href="getUserDeposits.html">
             
                     
-                    获取用户充值记录
+                    Get user deposit history
             
                 </a>
             
@@ -667,12 +563,12 @@
             
         </li>
     
-        <li class="chapter " data-level="3.1.33" data-path="getUserWithdrawals.html">
+        <li class="chapter " data-level="3.1.24" data-path="getUserWithdrawals.html">
             
                 <a href="getUserWithdrawals.html">
             
                     
-                    获取用户链上提现记录
+                    Get user onchain withdrawal history
             
                 </a>
             
@@ -680,12 +576,25 @@
             
         </li>
     
-        <li class="chapter " data-level="3.1.34" data-path="getUserTransfers.html">
+        <li class="chapter " data-level="3.1.25" data-path="submitOffChainWithdrawal.html">
+            
+                <a href="submitOffChainWithdrawal.html">
+            
+                    
+                    Submit offchain withdraw request
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.26" data-path="getUserTransfers.html">
             
                 <a href="getUserTransfers.html">
             
                     
-                    获取用户转账记录
+                    Get user transfer list
             
                 </a>
             
@@ -693,12 +602,12 @@
             
         </li>
     
-        <li class="chapter " data-level="3.1.35" data-path="getUserTrades.html">
+        <li class="chapter " data-level="3.1.27" data-path="getUserTrades.html">
             
                 <a href="getUserTrades.html">
             
                     
-                    获取用户交易记录
+                    Get user trade history
             
                 </a>
             
@@ -706,12 +615,90 @@
             
         </li>
     
-        <li class="chapter " data-level="3.1.36" data-path="getUserFeeRates.html">
+        <li class="chapter " data-level="3.1.28" data-path="getUserFeeRates.html">
             
                 <a href="getUserFeeRates.html">
             
                     
-                    查询用户下单费率
+                    Query user place order fee rate
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.29" data-path="getAmmPools.html">
+            
+                <a href="getAmmPools.html">
+            
+                    
+                    Get AMM pool configurations
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.30" data-path="getAmmPoolBalance.html">
+            
+                <a href="getAmmPoolBalance.html">
+            
+                    
+                    Get AMM pool balance snapshot
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.31" data-path="submitAmmPoolJoin.html">
+            
+                <a href="submitAmmPoolJoin.html">
+            
+                    
+                    Join into AMM pool
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.32" data-path="submitAmmPoolExit.html">
+            
+                <a href="submitAmmPoolExit.html">
+            
+                    
+                    Exit an AMM pool
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.33" data-path="getAmmUserTransactions.html">
+            
+                <a href="getAmmUserTransactions.html">
+            
+                    
+                    User's AMM join/exit transactions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.34" data-path="getAmmTrades.html">
+            
+                <a href="getAmmTrades.html">
+            
+                    
+                    get AMM pool trade transactions
             
                 </a>
             
@@ -858,7 +845,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >查询用户信息</a>
+        <a href=".." >Query user information</a>
     </h1>
 </div>
 
@@ -873,17 +860,17 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h2 id="&#x67E5;&#x8BE2;&#x7528;&#x6237;&#x4FE1;&#x606F;">&#x67E5;&#x8BE2;&#x7528;&#x6237;&#x4FE1;&#x606F;</h2>
-<p>&#x6D41;&#x91CF;&#x63A7;&#x5236;: 3 &#x6BCF;
-&#x79D2;</p>
+                                <h2 id="query-user-information">Query user information</h2>
+<p>&#x6D41;&#x91CF;&#x63A7;&#x5236;:  &#x6BCF;
+ &#x79D2;</p>
 <h3 id="&#x6458;&#x8981;">&#x6458;&#x8981;</h3>
 <hr>
 <h4 id="http-&#x65B9;&#x6CD5;">HTTP &#x65B9;&#x6CD5;</h4>
 <p><strong>GET</strong></p>
 <h4 id="&#x8BBF;&#x95EE;&#x8DEF;&#x5F84;">&#x8BBF;&#x95EE;&#x8DEF;&#x5F84;</h4>
-<p><strong>/api/v2/account</strong></p>
+<p><strong>/api/v3/account</strong></p>
 <h4 id="&#x529F;&#x80FD;">&#x529F;&#x80FD;</h4>
-<p>&#x67E5;&#x8BE2;&#x7528;&#x6237;&#x4FE1;&#x606F;</p>
+<p>Returns data associated with the user&apos;s exchange account.</p>
 <h3 id="api-&#x63CF;&#x8FF0;">API &#x63CF;&#x8FF0;</h3>
 <hr>
 <h4 id="http&#x5934;">HTTP&#x5934;</h4>
@@ -923,91 +910,20 @@
 <td style="text-align:left">owner</td>
 <td style="text-align:left">string</td>
 <td style="text-align:left">&#x662F;</td>
-<td style="text-align:left">&#x8981;&#x67E5;&#x8BE2;&#x7684;&#x4EE5;&#x592A;&#x574A;&#x5730;&#x5740;</td>
+<td style="text-align:left">Ethereum address</td>
 <td style="text-align:left">&quot;0x123456&quot;</td>
 </tr>
 </tbody>
 </table>
 <h4 id="&#x8BF7;&#x6C42;&#x793A;&#x4F8B;">&#x8BF7;&#x6C42;&#x793A;&#x4F8B;</h4>
-<p><div class="codetabs"><div class="codetabs-header"><div class="tab active" data-codetab="0">HTTP</div><div class="tab" data-codetab="1">CURL</div></div><div class="codetabs-body"><div class="tab active" data-codetab="0"><pre><code class="lang-http"><span class="hljs-keyword">GET</span> <span class="hljs-string">https://api.loopring.io/api/v2/account?owner=0x123456</span> HTTP/1.1
-<span class="hljs-attribute">Host</span>: api.loopring.io
+<p><div class="codetabs"><div class="codetabs-header"><div class="tab active" data-codetab="0">HTTP</div><div class="tab" data-codetab="1">CURL</div></div><div class="codetabs-body"><div class="tab active" data-codetab="0"><pre><code class="lang-http"><span class="hljs-keyword">GET</span> <span class="hljs-string">http://aa90cd58e38014a1b864ddc488129b7a-624979106.us-east-2.elb.amazonaws.com/api/v3/account?owner=0x123456</span> HTTP/1.1
+<span class="hljs-attribute">Host</span>: aa90cd58e38014a1b864ddc488129b7a-624979106.us-east-2.elb.amazonaws.com
 <span class="hljs-attribute">Connection</span>: keep-alive
 <span class="hljs-attribute">Accept</span>: */*
 <span class="hljs-attribute">Accept-Encoding</span>: gzip, deflate, br
 <span class="hljs-attribute">Accept-Language</span>: zh,en;q=0.9
-<span class="hljs-attribute">X-API-KEY</span>: sra1aavfa</code></pre></div><div class="tab" data-codetab="1"><pre><code class="lang-bash">curl -H <span class="hljs-string">&quot;X-API-KEY:sra1aavfa&quot;</span> https://api.loopring.io/api/v2/account\?owner\=0x123456</code></pre></div></div></div></p>
+<span class="hljs-attribute">X-API-KEY</span>: sra1aavfa</code></pre></div><div class="tab" data-codetab="1"><pre><code class="lang-bash">curl -H <span class="hljs-string">&quot;X-API-KEY:sra1aavfa&quot;</span> http://aa90<span class="hljs-built_in">cd</span>58e38014a1b864ddc488129b7a-624979106.us-east-2.elb.amazonaws.com/api/v3/account\?owner\=0x123456</code></pre></div></div></div></p>
 <h4 id="&#x54CD;&#x5E94;&#x5B57;&#x6BB5;">&#x54CD;&#x5E94;&#x5B57;&#x6BB5;</h4>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">&#x5B57;&#x6BB5;</th>
-<th style="text-align:left">&#x7C7B;&#x578B;</th>
-<th style="text-align:left">&#x5FC5;&#x987B;</th>
-<th style="text-align:left">&#x8BF4;&#x660E;</th>
-<th style="text-align:left">&#x4E3E;&#x4F8B;</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">resultInfo</td>
-<td style="text-align:left"><a href="../REST_APIS.html#ResultInfo">ResultInfo</a></td>
-<td style="text-align:left">&#x662F;</td>
-<td style="text-align:left">API&#x8FD4;&#x56DE;&#x4FE1;&#x606F;</td>
-<td style="text-align:left">/</td>
-</tr>
-<tr>
-<td style="text-align:left">data</td>
-<td style="text-align:left"><a href="#DexAccount">DexAccount</a></td>
-<td style="text-align:left">&#x662F;</td>
-<td style="text-align:left">&#x7528;&#x6237;&#x4FE1;&#x606F;</td>
-<td style="text-align:left">&quot;0&quot;</td>
-</tr>
-</tbody>
-</table>
-<h4 id="&#x54CD;&#x5E94;&#x793A;&#x4F8B;">&#x54CD;&#x5E94;&#x793A;&#x4F8B;</h4>
-<pre><code class="lang-json">{
-    <span class="hljs-string">&quot;resultInfo&quot;</span> : {
-        <span class="hljs-string">&quot;code&quot;</span> : <span class="hljs-number">0</span>,
-        <span class="hljs-string">&quot;message&quot;</span> : <span class="hljs-string">&quot;SUCCESS&quot;</span>
-    },
-    <span class="hljs-string">&quot;data&quot;</span> : {
-        <span class="hljs-string">&quot;accountId&quot;</span> : <span class="hljs-number">10</span>,
-        <span class="hljs-string">&quot;frozen&quot;</span> : <span class="hljs-literal">false</span>,
-        <span class="hljs-string">&quot;publicKeyX&quot;</span> : <span class="hljs-string">&quot;123&quot;</span>,
-        <span class="hljs-string">&quot;publicKeyY&quot;</span> : <span class="hljs-string">&quot;456&quot;</span>,
-        <span class="hljs-string">&quot;tags&quot;</span> : <span class="hljs-string">&quot;vip_1&quot;</span>,
-        <span class="hljs-string">&quot;keyNonce&quot;</span> : <span class="hljs-number">0</span>,
-        <span class="hljs-string">&quot;accountNonce&quot;</span> : <span class="hljs-number">0</span>
-    }
-}
-</code></pre>
-<h4 id="&#x72B6;&#x6001;&#x7801;">&#x72B6;&#x6001;&#x7801;</h4>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">&#x72B6;&#x6001;&#x7801;</th>
-<th style="text-align:left">&#x63CF;&#x8FF0;</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">100000</td>
-<td style="text-align:left">&#x672A;&#x77E5;&#x9519;&#x8BEF;</td>
-</tr>
-<tr>
-<td style="text-align:left">101001</td>
-<td style="text-align:left">&#x672A;&#x627E;&#x5230;&#x8BE5;&#x5730;&#x5740;</td>
-</tr>
-<tr>
-<td style="text-align:left">101002</td>
-<td style="text-align:left">&#x672A;&#x627E;&#x5230;&#x8BE5;&#x7528;&#x6237;</td>
-</tr>
-</tbody>
-</table>
-<h3 id="&#x6A21;&#x578B;">&#x6A21;&#x578B;</h3>
-<hr>
-<h4 id="dexaccount">DexAccount</h4>
-<p><span id="DexAccount"></span>&#x7528;&#x6237;&#x4FE1;&#x606F;</p>
 <table>
 <thead>
 <tr>
@@ -1023,50 +939,110 @@
 <td style="text-align:left">accountId</td>
 <td style="text-align:left">integer</td>
 <td style="text-align:left">&#x662F;</td>
-<td style="text-align:left">&#x7528;&#x6237;ID</td>
+<td style="text-align:left">Account ID</td>
 <td style="text-align:left">10</td>
+</tr>
+<tr>
+<td style="text-align:left">owner</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">&#x662F;</td>
+<td style="text-align:left">Ethereum address</td>
+<td style="text-align:left">&quot;0xABCD&quot;</td>
 </tr>
 <tr>
 <td style="text-align:left">frozen</td>
 <td style="text-align:left">boolean</td>
 <td style="text-align:left">&#x662F;</td>
-<td style="text-align:left">&#x8D26;&#x6237;&#x662F;&#x5426;&#x51BB;&#x7ED3;&#x72B6;&#x6001;</td>
+<td style="text-align:left">The frozen state of the account, true stands for frozen, if the account is frozen, the user cant submit order.</td>
 <td style="text-align:left">&quot;false&quot;</td>
 </tr>
 <tr>
-<td style="text-align:left">publicKeyX</td>
-<td style="text-align:left">string</td>
+<td style="text-align:left">publicKey</td>
+<td style="text-align:left"><a href="#PublicKey">PublicKey</a></td>
 <td style="text-align:left">&#x662F;</td>
-<td style="text-align:left">&#x516C;&#x94A5;X</td>
-<td style="text-align:left">&quot;123&quot;</td>
-</tr>
-<tr>
-<td style="text-align:left">publicKeyY</td>
-<td style="text-align:left">string</td>
-<td style="text-align:left">&#x662F;</td>
-<td style="text-align:left">&#x516C;&#x94A5;Y</td>
-<td style="text-align:left">&quot;456&quot;</td>
+<td style="text-align:left">The user&apos;s public key</td>
+<td style="text-align:left">&quot;{x:0x241707bcc6d7a4c<br>cf10304be248d343a527<br>e85f61b45d721544d027<br>cc1f2fb5f,y:0x302f3a<br>521dbdd1d0eb1944c832<br>3d4ac3b3e9c9201f4aa4<br>3a2565054886369d9c}&quot;</td>
 </tr>
 <tr>
 <td style="text-align:left">tags</td>
 <td style="text-align:left">string</td>
 <td style="text-align:left">&#x5426;</td>
-<td style="text-align:left">&#x6807;&#x8BB0;&#x5728;&#x7528;&#x6237;&#x8EAB;&#x4E0A;&#x7684;&#x7B49;&#x7EA7;&#x548C;&#x5176;&#x4ED6;&#x7279;&#x6B8A;&#x6807;&#x8BC6;&#xFF0C;&#x4EE5;&quot;,&quot;&#x5206;&#x9694;</td>
+<td style="text-align:left">Comma separated list of tags such as VIP levels, etc</td>
 <td style="text-align:left">&quot;vip_1&quot;</td>
 </tr>
 <tr>
-<td style="text-align:left">keyNonce</td>
+<td style="text-align:left">nonce</td>
 <td style="text-align:left">integer</td>
 <td style="text-align:left">&#x662F;</td>
-<td style="text-align:left">&#x7528;&#x4E8E;&#x751F;&#x6210;&#x7528;&#x6237;&#x4EA4;&#x6613;&#x6240;&#x79C1;&#x94A5;&#x7684;Nonce</td>
+<td style="text-align:left">field.DexAccountV3.nonce</td>
 <td style="text-align:left">0</td>
 </tr>
+</tbody>
+</table>
+<h4 id="&#x54CD;&#x5E94;&#x793A;&#x4F8B;">&#x54CD;&#x5E94;&#x793A;&#x4F8B;</h4>
+<pre><code class="lang-json">{
+    <span class="hljs-string">&quot;accountId&quot;</span> : <span class="hljs-number">10</span>,
+    <span class="hljs-string">&quot;owner&quot;</span> : <span class="hljs-string">&quot;0xABCD&quot;</span>,
+    <span class="hljs-string">&quot;frozen&quot;</span> : <span class="hljs-literal">false</span>,
+    <span class="hljs-string">&quot;publicKey&quot;</span> : {
+        <span class="hljs-string">&quot;x&quot;</span> : <span class="hljs-string">&quot;0x241707bcc6d7a4ccf10304be248d343a527e85f61b45d721544d027cc1f2fb5f&quot;</span>,
+        <span class="hljs-string">&quot;y&quot;</span> : <span class="hljs-string">&quot;0x302f3a521dbdd1d0eb1944c8323d4ac3b3e9c9201f4aa43a2565054886369d9c&quot;</span>
+    },
+    <span class="hljs-string">&quot;tags&quot;</span> : <span class="hljs-string">&quot;vip_1&quot;</span>,
+    <span class="hljs-string">&quot;nonce&quot;</span> : <span class="hljs-number">0</span>
+}
+</code></pre>
+<h4 id="&#x72B6;&#x6001;&#x7801;">&#x72B6;&#x6001;&#x7801;</h4>
+<table>
+<thead>
 <tr>
-<td style="text-align:left">accountNonce</td>
-<td style="text-align:left">integer</td>
+<th style="text-align:left">&#x72B6;&#x6001;&#x7801;</th>
+<th style="text-align:left">&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">100000</td>
+<td style="text-align:left">Unknown error</td>
+</tr>
+<tr>
+<td style="text-align:left">101001</td>
+<td style="text-align:left">The address was not found</td>
+</tr>
+<tr>
+<td style="text-align:left">101002</td>
+<td style="text-align:left">User not found</td>
+</tr>
+</tbody>
+</table>
+<h3 id="&#x6A21;&#x578B;">&#x6A21;&#x578B;</h3>
+<hr>
+<h4 id="publickey">PublicKey</h4>
+<p><span id="PublicKey"></span>Describes the users public key which is a point of the selected eclipse curve.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x5B57;&#x6BB5;</th>
+<th style="text-align:left">&#x7C7B;&#x578B;</th>
+<th style="text-align:left">&#x5FC5;&#x987B;</th>
+<th style="text-align:left">&#x8BF4;&#x660E;</th>
+<th style="text-align:left">&#x4E3E;&#x4F8B;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">x</td>
+<td style="text-align:left">string</td>
 <td style="text-align:left">&#x662F;</td>
-<td style="text-align:left">&#x7528;&#x6237;&#x4EA4;&#x6613;&#x6240;&#x8D26;&#x6237;&#x7528;&#x6237;&#x94FE;&#x4E0B;&#x8BF7;&#x6C42;&#x7684;Nonce</td>
-<td style="text-align:left">0</td>
+<td style="text-align:left">The public keys x part.</td>
+<td style="text-align:left">&quot;0x241707bcc6d7a4ccf1<br>0304be248d343a527e85<br>f61b45d721544d027cc1<br>f2fb5f&quot;</td>
+</tr>
+<tr>
+<td style="text-align:left">y</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">&#x662F;</td>
+<td style="text-align:left">The public keys y part.</td>
+<td style="text-align:left">&quot;0x302f3a521dbdd1d0eb<br>1944c8323d4ac3b3e9c9<br>201f4aa43a2565054886<br>369d9c&quot;</td>
 </tr>
 </tbody>
 </table>
@@ -1097,12 +1073,12 @@
 
             
                 
-                <a href="submitTransfer.html" class="navigation navigation-prev " aria-label="Previous page: 提交内部转账">
+                <a href="submitTransfer.html" class="navigation navigation-prev " aria-label="Previous page: Submit internal transfer">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="getUserCreate.html" class="navigation navigation-next " aria-label="Next page: 获取用户开户记录">
+                <a href="submitUpdateAccount.html" class="navigation navigation-next " aria-label="Next page: Update account EDDSA key">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -1113,7 +1089,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"查询用户信息","level":"3.1.28","depth":2,"next":{"title":"获取用户开户记录","level":"3.1.29","depth":2,"path":"dex_apis/getUserCreate.md","ref":"dex_apis/getUserCreate.md","articles":[]},"previous":{"title":"提交内部转账","level":"3.1.27","depth":2,"path":"dex_apis/submitTransfer.md","ref":"dex_apis/submitTransfer.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-sharing","-fontsettings","expandable-chapters","custom-favicon","katex","codetabs","search-pro","insert-logo","sharing-plus","flexible-alerts","hints","back-to-top-button","code"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"search-pro":{},"codetabs":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"hints":{"danger":"fa fa-exclamation-circle","info":"fa fa-info-circle","tip":"fa fa-mortar-board","working":"fa fa-wrench"},"code":{"copyButtons":true},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":1},"highlight":{},"favicon":"./gitbook/images/favicon.ico","back-to-top-button":{},"custom-favicon":{},"flexible-alerts":{"danger":{"className":"danger","icon":"fa fa-ban","label":"Attention"},"note":{"className":"info","icon":"fa fa-info-circle","label":"Note"},"style":"callout","tip":{"className":"tip","icon":"fa fa-lightbulb-o","label":"Tip"},"warning":{"className":"warning","icon":"fa fa-exclamation-triangle","label":"Warning"}},"sharing":{"weibo":true,"facebook":true},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"insert-logo":{"style":"background: none; max-height: 28px; min-height: 28px","url":"https://loopring.io/assets/images/logo.svg"},"expandable-chapters":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Loopring API","language":"zh-hans","gitbook":"*"},"file":{"path":"dex_apis/getAccount.md","mtime":"2020-09-27T02:46:58.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-09-27T02:46:59.167Z"},"basePath":"..","book":{"language":"zh-hans"}});
+            gitbook.page.hasChanged({"page":{"title":"Query user information","level":"3.1.18","depth":2,"next":{"title":"Update account EDDSA key","level":"3.1.19","depth":2,"path":"dex_apis/submitUpdateAccount.md","ref":"dex_apis/submitUpdateAccount.md","articles":[]},"previous":{"title":"Submit internal transfer","level":"3.1.17","depth":2,"path":"dex_apis/submitTransfer.md","ref":"dex_apis/submitTransfer.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-sharing","-fontsettings","expandable-chapters","custom-favicon","katex","codetabs","search-pro","insert-logo","sharing-plus","flexible-alerts","hints","back-to-top-button","code"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"search-pro":{},"codetabs":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"hints":{"danger":"fa fa-exclamation-circle","info":"fa fa-info-circle","tip":"fa fa-mortar-board","working":"fa fa-wrench"},"code":{"copyButtons":true},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":1},"highlight":{},"favicon":"./gitbook/images/favicon.ico","back-to-top-button":{},"custom-favicon":{},"flexible-alerts":{"danger":{"className":"danger","icon":"fa fa-ban","label":"Attention"},"note":{"className":"info","icon":"fa fa-info-circle","label":"Note"},"style":"callout","tip":{"className":"tip","icon":"fa fa-lightbulb-o","label":"Tip"},"warning":{"className":"warning","icon":"fa fa-exclamation-triangle","label":"Warning"}},"sharing":{"weibo":true,"facebook":true},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"insert-logo":{"style":"background: none; max-height: 28px; min-height: 28px","url":"https://loopring.io/assets/images/logo.svg"},"expandable-chapters":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Loopring API","language":"zh-hans","gitbook":"*"},"file":{"path":"dex_apis/getAccount.md","mtime":"2020-12-25T07:23:36.828Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-12-25T07:23:38.692Z"},"basePath":"..","book":{"language":"zh-hans"}});
         });
     </script>
 </div>

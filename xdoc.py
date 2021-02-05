@@ -42,7 +42,12 @@ SEG_SIZE = 20
 
 EXAM_HEADERS = {
     'X-API-KEY' : 'sra1aavfa',
-    'X-API-SIG' : 'dkkfinfasdf'
+    'X-API-SIG' : 'dkkfinfasdf',
+}
+
+REDIRECTION_HEADERS = {
+    'X-EDDSA-SIG' : 'X-API-SIG',
+    'X-ECDSA-SIG' : 'X-API-SIG'
 }
 
 TPS_CONFIG = 'tps_config'
@@ -421,7 +426,12 @@ def create_request_http_example(apiObj):
     url = '%s%s'%(hostUrl, apiObj['path'])
     headers = []
     for header in get_request_headers(apiObj['operationId']):
-        headers.append({'key' : header, 'value' : EXAM_HEADERS[header]})
+        if header in REDIRECTION_HEADERS.keys():
+            redir_header = REDIRECTION_HEADERS[header]
+            headers.append({'key' : redir_header, 'value' : EXAM_HEADERS[redir_header]})
+        else:
+            headers.append({'key' : header, 'value' : EXAM_HEADERS[header]})
+
     if (apiObj['method'] == 'POST'):
         apiObj['payload'] = model_to_json(apiObj['params'][0]['$ref'])
         headers.append({'key':'Content-Type', 'value':'application/json'})
@@ -439,7 +449,12 @@ def create_request_http_example(apiObj):
 def create_request_curl_headers(operationId):
     ret = ''
     for header in get_request_headers(operationId):
-        ret += ' -H "%s:%s"'%(header, EXAM_HEADERS[header])
+        if header in REDIRECTION_HEADERS.keys():
+            redir_header = REDIRECTION_HEADERS[header]
+            ret += ' -H "%s:%s"'%(redir_header, EXAM_HEADERS[redir_header])
+        else:
+            ret += ' -H "%s:%s"'%(header, EXAM_HEADERS[header])
+
     return ret
 
 def create_request_curl_example(api):
@@ -528,11 +543,14 @@ def get_request_headers(operationId):
     ret = []
     if operationId not in VARS['v']['no_key']:
         ret.append('X-API-KEY')
-    if operationId in VARS['v']['has_sig']:
-        ret.append('X-API-SIG')
+    if operationId in VARS['v']['has_eddsa_sig']:
+        ret.append('X-EDDSA-SIG')
+    if operationId in VARS['v']['has_ecdsa_sig']:
+        ret.append('X-ECDSA-SIG')
     return ret
 
 def get_tps(api):
+    return 1
     return VARS['tps'].get(
         (api['path'], api['method'].lower()), VARS['tps']['default'])
 
@@ -627,7 +645,7 @@ def load_tps_config():
 
 def build_doc():
     load_info()
-    load_tps_config()
+    # load_tps_config()
     LOGGER.info('Creating gitbook files...')
     generate_structs()
     LOGGER.info('Syncing gitbook files...')
@@ -659,12 +677,11 @@ def fetch_tps_config():
     run_command_with_return_info(
         'git clone %s %s'%(VARS['v']['tpsConfig'], TPS_CONFIG))
 
-
 def refresh_swagger():
     load_info()
     for lang in VARS['v']['langs']:
         fetch_and_save_swagger_json(lang)
-    fetch_tps_config()
+    # fetch_tps_config()
 
 def windup():
     if not os.path.exists('./docs'):
